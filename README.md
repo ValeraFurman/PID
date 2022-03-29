@@ -38,4 +38,12 @@ using OxyPlot.Axes;
            return ((amt) < (low) ? (low) : ((amt) > (high) ? (high) : (amt)));
         }
 //////////////........code
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            // Label Signal OUT 8bit
+            PMW_OUT.Text = Convert.ToString(computePID(Sensor, float.Parse(tSetup.Text),
+float.Parse(KpSetup.Text), float.Parse(KiSetup.Text), float.Parse(KdSetup.Text), Int32.Parse(Dt_TIME.Text), 0, 255));
+            // code?
+        }
+//////////////........code
 ```
