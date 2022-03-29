@@ -40,8 +40,8 @@ using OxyPlot.Axes;
 //////////////........code
         private void timer2_Tick(object sender, EventArgs e)
         {
-            // Выводим шим в лэйбу для наглядностит 8bit
-            PMW_OUT.Text = Convert.ToString(computePID(Sensor, float.Parse(tSetup.Text),
+            // Выводим шим в лэйбу для наглядности 8bit                                        PMW->       MIN   MAX
+            PMW_OUT.Text = Convert.ToString(computePID(Sensor, float.Parse(tSetup.Text),                      
 float.Parse(KpSetup.Text), float.Parse(KiSetup.Text), float.Parse(KdSetup.Text), Int32.Parse(Dt_TIME.Text), 0, 255));
             // code?
         }
