@@ -1,2 +1,3 @@
-# PID
-Симулятор PID / Simulator PID
+# Симулятор PID / Simulator PID
+Простой симулятор без буна на c#;
+
